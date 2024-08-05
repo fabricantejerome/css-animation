@@ -41,12 +41,14 @@ html, body {
     position: absolute;
     top: -70px;
     left: 0;
-    animation-name: drive;
+    /* animation-name: drive;
     animation-duration: 3s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
     /* animation-delay: 2s; */
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; /* common value ease, linear, ease-in, ease-out, ease-in-out */
+    /* animation-iteration-count: infinite; */
+    /* animation-timing-function: linear; */
+    animation: drive 3s infinite linear,
+               jump 0.3s 1.2s ease;
 }
 
 .luigi {
@@ -86,4 +88,10 @@ html, body {
 @keyframes wind {
     from { left: -300px; }
     to { left: 100%; }
+}
+
+@keyframes jump {
+    0% { top: -70px;}
+    50% { top: -100px}
+    100% { top: -70px;}
 }
