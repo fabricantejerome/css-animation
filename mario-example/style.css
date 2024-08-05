@@ -44,12 +44,23 @@ html, body {
     animation-name: drive;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+}
+
+.luigi {
+    position: absolute;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
 }
 
 /* keyframes */
 @keyframes drive {
     from { transform: translateX(0)}
-    to { transform: translateX(1150px)}
+    to { transform: translateX(1300px)}
 }
 
