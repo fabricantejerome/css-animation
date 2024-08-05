@@ -46,6 +46,7 @@ html, body {
     animation-fill-mode: forwards;
     /* animation-delay: 2s; */
     animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); /* common value ease, linear, ease-in, ease-out, ease-in-out */
 }
 
 .luigi {
